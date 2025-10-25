@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Site Base</title>
+</head>
+<body>
+    <header>
+        <input type="image" src="imgBotoes/lightMode.png" alt="Botão de Light Mode e Dark Mode" id="BtnModoTela">
+
+        <h1>Lorem ipsum</h1>
+        <h2>Lorem ipsum dolor sit</h2>
+    </header>
+    <nav>
+        <a href="#">Lorem A</a>
+        <a href="#">Lorem B</a>
+        <a href="#">Lorem C</a>
+        <a href="#">Lorem D</a>
+    </nav>
+    <main>
+        <section class="left">
+            <h3>Lorem</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id fugit ex nemo libero totam quaerat quasi, quos, sed mollitia cupiditate, sit similique numquam et modi ipsa magnam odit! Unde, ratione!</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores iure quasi in. Incidunt, at. Ipsa harum delectus nihil, molestias deleniti, voluptatibus facilis quis sequi laborum rem, dignissimos voluptates expedita. Optio?</p>
+     
+            <hr>
+
+            <h4>Ipsum</h4>
+            <ul>
+                <li>lorem ipsum</li>
+                <li>lorem ipsum</li>
+                <li>lorem ipsum</li>
+            </ul>
+
+            <h4>Dolor sit</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, earum dolorem totam, quam tenetur amet pariatur id magni culpa ipsam provident laboriosam ullam quis dolorum delectus! Aspernatur debitis perspiciatis accusamus.</p>
+        </section>
+        <section class="right">
+                <h3>Dolor</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe fuga libero vero est veniam obcaecati fugiat impedit harum eligendi officiis maxime dolor quia ut, eaque, omnis quos, similique consectetur! Veritatis.</p>
+                <ol>
+                    <li>dolor sit</li>
+                        <ul>
+                            <li>sit amet consectetur adipisicing elit</li>
+                            <li>sit amet consectetur adipisicing elit</li>
+                            <li>sit amet consectetur adipisicing elit</li>
+                        </ul>
+                    <li>dolor sit</li>
+                    <li>dolor sit</li>
+                </ol>
+
+                <h4>Sit</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim cumque voluptatum reprehenderit, et quos dolor expedita maxime necessitatibus ducimus obcaecati dolorem fugit facilis laudantium culpa qui harum! Quibusdam, exercitationem labore.</p>
+                <input type="button" value="Lorem 1" class="btn">
+                <h4>Amet</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique voluptate quam expedita doloremque ducimus voluptatem eos earum, omnis dolore consequatur voluptatibus eaque incidunt deserunt eius obcaecati velit quia perspiciatis ipsa!</p>
+                <input type="button" value="Lorem 2" class="btn">
+            </section>
+    </main>
+    <footer>
+        <p><a href="#">Lorem1</a> | <a href="#">Lorem2</a> | <a href="#">Lorem3</a> | <a href="#">Lorem4</a> </p>
+    </footer>
+
+        <script>
+        const btn = document.getElementById('BtnModoTela');
+        const root = document.documentElement;
+
+        btn.addEventListener('click', () => {
+            if (root.classList.contains('dark')) {
+                root.classList.remove('dark');
+                btn.src = "imgBotoes/lightMode.png";
+            } else {
+                root.classList.add('dark');
+                btn.src = "imgBotoes/darkMode.png";
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+
+:root {
+    --cor1: #f2e9e4;  /* mais clara */
+    --cor2: #c9ada7;  /* variante da mais clara */
+    --cor3: #9a8c98;  /* fixa */
+    --cor4: #4a4e69;  /* variante da mais escura */
+    --cor5: #22223b;  /* mais escura */
+    --corText: #202020;
+    --corBackgrond: #eeeeee;
+}
+
+ /* inversão parcial */
+ /* Agora invertemos os tons ao inves das cores, de um tom escuro para um mais claro e vice versa, mantendo uma cor fixa (geralmente sendo o meio termo da palheta) */
+
+:root.dark {
+    --cor1: #c9ada7;  /* a mais clara virou sua variante */
+    --cor2: #f2e9e4;  /* a variante da mais clara virou a mais clara */
+    --cor3: #9a8c98;  /* fixa */
+    --cor4: #22223b;  /* a variante da mais escura virou a mais escura */
+    --cor5: #4a4e69;  /* a mais escura virou sua variante */
+    --corText: #dadada;
+    --corBackgrond: #202020;
+}
+
+body {
+    background-color: var(--corBackgrond);
+    color: var(--corText);
+    font-size: 1.3em;
+}
+
+header {
+    padding: 15px;
+    background-color: var(--cor3);
+}
+
+h1 {
+    color: #eacdc2;
+    font-size: 2em;
+}
+
+h1, h2 {
+    margin-left: 30px;
+}
+
+#BtnModoTela {
+    width: 35px;
+}
+
+nav a{
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px;
+    background-color: var(--cor5);
+    color: var(--cor1);
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+h3{
+    margin: 10px;
+    font-size: 1.7em;
+    color: var(--cor5);
+}
+
+h4{
+    color: var(--cor3);
+    font-size: 1.4em;
+}
+
+section {
+    padding: 30px;
+}
+
+section.left {
+    border-right: 1px solid var(--cor3);
+}
+
+input.btn {
+    padding: 10px;
+    background-color: var(--cor4);
+    color: var(--cor2);
+}
+
+footer {
+    background-color: var(--cor5);
+    padding: 2px;
+    margin: 20px 0px;
+    border-top: 2px solid var(--cor1);
+}
+
+footer p {
+    text-align: center;
+    color: var(--cor1);
+}
+
+footer a {
+    color: var(--cor1);
+    text-decoration: none;
+}
+
+@media (max-width: 900px) {
+    main {
+    flex-direction: column;
+    }
+    section.left {
+    border-right: 0px solid var(--cor3);
+    }
+}

@@ -1,0 +1,111 @@
+
+:root {
+    --cor1: #C8E0F4;  /*  */
+    --cor2: #9DD1F1;  /*  */
+    --cor3: #508AA8;  /*  */
+    --cor4: #BA1200;  /*  */
+    --cor5: #031927;  /*  */
+    --corText: #202020;
+    --corBackgrond: #eeeeee;
+}
+
+ /* inversão de brilho */
+ /*  */
+
+:root.dark {
+    --cor1: #16476F;  /* -70 brilho */
+    --cor2: #0F4668;  /* -70 brilho */
+    --cor3: #182A33;  /* -70 brilho */
+    --cor4: #FFA79D;  /* +70 brilho */
+    --cor5: #7CC7F5;  /* +70 brilho */
+    --corText: #dadada;
+    --corBackgrond: #202020;
+}
+
+body {
+    background-color: var(--corBackgrond);
+    color: var(--corText);
+    font-size: 1.3em;
+}
+
+header {
+    padding: 15px;
+    background-color: var(--cor3);
+}
+
+h1 {
+    color: #eacdc2;
+    font-size: 2em;
+}
+
+h1, h2 {
+    margin-left: 30px;
+}
+
+#BtnModoTela {
+    width: 35px;
+}
+
+nav a{
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px;
+    background-color: var(--cor1);
+    color: var(--cor4);
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+h3{
+    margin: 10px;
+    font-size: 1.7em;
+    color: var(--cor4);
+}
+
+h4{
+    color: var(--cor5);
+    font-size: 1.4em;
+}
+
+section {
+    padding: 30px;
+}
+
+section.left {
+    border-right: 1px solid var(--cor4);
+}
+
+input.btn {
+    padding: 10px;
+    background-color: var(--cor1);
+    color: var(--cor4);
+}
+
+footer {
+    background-color: var(--cor4);
+    padding: 2px;
+    margin: 20px 0px;
+    border-top: 2px solid var(--cor1);
+}
+
+footer p {
+    text-align: center;
+    color: var(--cor1);
+}
+
+footer a {
+    color: var(--cor1);
+    text-decoration: none;
+}
+
+@media (max-width: 900px) {
+    main {
+    flex-direction: column;
+    }
+    section.left {
+    border-right: 0px solid var(--cor4);
+    }
+}
